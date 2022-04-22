@@ -1,0 +1,42 @@
+*,*:before, *:after {
+    /* border: 1px solid green; */
+    box-sizing: border-box;
+    padding: 20px 20px 20px 20px;
+    text-align: left;
+    width: fit-content;
+}
+
+html {
+    margin: auto;
+}
+
+a {
+    margin: auto;
+}
+p {
+    border-color: blue;
+    color: brown;
+}
+
+h1,h2 {
+    color: orchid;
+    border-color: orange;
+}
+
+h2#cal-name {
+    text-align: center;
+    border-width: 1px;
+    border-style: solid;
+    border-color: brown;
+    margin: auto;
+    width: auto;
+}
+
+table {
+    text-align: center;
+    border-color: red;
+}
+
+td {
+    border-color: violet;
+}

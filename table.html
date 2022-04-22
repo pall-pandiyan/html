@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+	<head>
+		<title> Table with style</title>
+		<style>
+			* {
+				border: 1px solid red;
+				padding: 10px;
+				width: fit-content;
+			}
+			div#div-table {
+				float: left;
+				width: auto;
+			}
+			div#div-list {
+				float: right;
+			}
+			div#div-form {
+				float: right;
+			}
+			
+		</style>
+	</head>
+	
+<body>
+	<div id="div-table">
+		<table border="1" >
+			<caption>Phone numbers</caption>
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th colspan="2">Phone</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>John</td>
+					<td>577854</td>
+					<td>577855</td>
+				</tr>
+				<tr>
+					<td>Jack</td>
+					<td>577856</td>
+					<td>577857</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<td>&nbsp;</td>
+					<td>Personal</td>
+					<td>Office</td>
+				</tr>
+			</tfoot>
+		</table>
+	</div>
+	
+	<div id="div-list">
+		<dl>
+			<dt>Technical Skills</dt>
+			
+			<dd>Html / Css / Javascript</dd>
+			<dd>AngularJS</dd>
+			<dd>Python</dd>
+			<dd>Java</dd>
+			<dd>C</dd>
+			<dd>C++</dd>
+		</dl>
+	</div>
+	
+	<div id="div-form">
+		<form action="./action.php" method="post">
+		Name: <input type="text" name="name" / > <br / >
+		Age: <input type="text" name="age" min="1" max="99" / ><br / >
+		Gender:
+		<select name="gender">
+			<option selected="selected" value="Select">--Select--</option>
+			<option value="male">Male</option>
+			<option value="female">Female</option>
+			<option value="Transgender">Transgender</option>
+		</select><br / >
+		<input checked="checked" name="newsletter" type="checkbox" value="newsletter" / >Subscribe to our newsletter.<br / >
+		<button type="submit" name="submit">Send</button>
+		</form>
+	</div>
+	
+</body>
+</html>
